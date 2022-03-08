@@ -33,7 +33,7 @@ use yii\web\Response;
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
-class SecurityController extends Controller
+class SecurityController extends \app\components\Controller
 {
     use AjaxValidationTrait;
     use EventTrait;

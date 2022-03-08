@@ -23,7 +23,7 @@ use yii\web\NotFoundHttpException;
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
-class ProfileController extends Controller
+class ProfileController extends \app\components\Controller
 {
     /** @var Finder */
     protected $finder;

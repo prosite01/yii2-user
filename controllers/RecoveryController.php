@@ -27,7 +27,7 @@ use yii\web\NotFoundHttpException;
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
-class RecoveryController extends Controller
+class RecoveryController extends \app\components\Controller
 {
     use AjaxValidationTrait;
     use EventTrait;
