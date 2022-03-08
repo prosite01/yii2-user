@@ -31,7 +31,7 @@ use yii\web\NotFoundHttpException;
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
-class SettingsController extends Controller
+class SettingsController extends \app\components\Controller
 {
     use AjaxValidationTrait;
     use EventTrait;
