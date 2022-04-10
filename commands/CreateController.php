@@ -32,6 +32,7 @@ class CreateController extends Controller
      *
      * @param string      $email    Email address
      * @param string      $username Username
+     * @param string      $phone Phone
      * @param null|string $password Password (if null it will be generated automatically)
      */
     public function actionIndex($email, $username, $password = null)
@@ -41,6 +42,7 @@ class CreateController extends Controller
             'scenario' => 'create',
             'email'    => $email,
             'username' => $username,
+            'phone'    => $phone,
             'password' => $password,
         ]);
 
