@@ -32,15 +32,17 @@ class CreateController extends Controller
      *
      * @param string      $email    Email address
      * @param string      $username Username
+     * @param string      $phone Phone
      * @param null|string $password Password (if null it will be generated automatically)
      */
-    public function actionIndex($email, $username, $password = null)
+    public function actionIndex($email, $username, $phone, $password = null)
     {
         $user = Yii::createObject([
             'class'    => User::className(),
             'scenario' => 'create',
             'email'    => $email,
             'username' => $username,
+            'phone'    => $phone,
             'password' => $password,
         ]);
 
